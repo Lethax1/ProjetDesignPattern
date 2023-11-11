@@ -1,0 +1,22 @@
+Configuration du serveur de flammes. 
+Le nom du fichier de configuration (avec extension et chemin complet sur le disque) doit être placé  en ligne de commande 
+comme argument de l'application TestServeurFlammes.exe
+Si le nom de fichier ne comporte pas de chemin, le fichier de configuration doit être placé dans le même dossier que l'application TestServeurFlammes.exe
+S'il n'y a pas de fichier de configuration ou si ce fichier ne respecte pas les règles qui suivent, le serveur est configuré avec des valeurs par défaut.
+Les lignes 1 à 11 sont ignorées. les lignes suivantes sont de la forme clef = valeur.
+seule la partie valeur (qui suit le '=') est parsée. Si le '=' est manquant, toute la ligne est considérée comme étant valeur
+sur la ligne 12, figure l'adresse du serveur au format textuel ipv4. sur la ligne 13, le port d'écoute du serveur. sur la ligne 14, le "pas"  qui définit
+la vitesse d'écoulement des étincelles de la flamme. Sur la ligne 15, coeffEps qui définit la dispersion des étincelles. Sur la ligne 16, le nombre de 
+couleurs de la flamme. Sur les lignes suivantes, les couleurs dans l'ordre depuis le début de la flamme jusqu'à la pointe de la flamme. Les couleurs sont
+données en hexa au format RGB 24 bits (6 chiffres hexa) au format texte
+adresse serveur au format textuel = 127.0.0.1
+port serveur = 3718
+pas (nombre réel tel que 0 < pas < 1), définit la vitesse d'écoulement des étincelles, plus pas est grand, plus les érincelles sont rapides = 0.0051
+coeffEps (nombre réel tel que 0 < coeffEps), définit la dispersion aléatoire des étincelles, plus coeffEps est grand, plus les étincelles sont dispersées = 1.5e-2
+nombre de couleurs de la flamme = 3
+goldenyellow = FFB81C
+crimson = DC143C
+couleur3 noir = 000000
+Cette ligne et les suivantes sont ignorées, couleur1 sunshineyellow = FFFD37
+couleur2 firebrick = B22222
+darkred=8B0000
